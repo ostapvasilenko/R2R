@@ -1,0 +1,105 @@
+.hero {
+    background-color: #FAFAFB;
+
+    #hero__background {
+        background-image: url('../img/hero/hero-last.png');
+        background-repeat: no-repeat;
+        background-size: 930px 440px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0px;
+
+        &_info {
+            text-align: center;
+            width: 423px;
+            margin-top: 80px;
+            order: 1;
+
+            h2 {
+                font-weight: 400;
+                font-family: Rubik;
+                font-size: 30px;
+            }
+
+            button {
+                background-color: #039CC8;
+                padding: 15px 40px;
+                color: #FFFFFF;
+                font-weight: 700;
+                font-size: 18px;
+                font-family: Inter;
+                margin-top: 15px;
+            }
+        }
+
+        &_img {
+            background-image: url('../img/hero/hero.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            width: 420px;
+            order: 2;
+        }
+    }
+
+    @media screen and(max-width:1300px) {
+        #hero__background {
+            background-size: 780px 440px;
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        #hero__background {
+            background-image: none;
+        }
+
+        &__block {
+            &_info {
+                width: 300px;
+
+                h2 {
+                    font-size: 20px;
+                }
+
+                button {
+                    padding: 15px 25px;
+                }
+            }
+
+            &_img {
+                height: 300px;
+                width: 310px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__block {
+            display: block;
+
+            &_info {
+                width: 100%;
+                margin-top: 0;
+            }
+
+            &_img {
+                margin: 20px auto 0px;
+                height: 410px;
+                width: 400px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__block {
+            &_img {
+                height: 300px;
+                width: 300px;
+            }
+        }
+    }
+}
