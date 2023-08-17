@@ -1,0 +1,166 @@
+.form {
+    background-color: #DDEEF3;
+    padding: 45px 0px;
+
+    &__block {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_img {
+            background-image: url('../img/form/form.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 452px;
+            height: 320px;
+        }
+
+        &_info {
+            width: 55%;
+
+            h4 {
+                font-family: Inter;
+                font-weight: 800;
+                font-size: 24px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 700;
+                font-size: 20px;
+                width: 400px;
+                margin-top: 15px;
+            }
+
+            form {
+                margin: 10px auto;
+                padding: 35px 0px 0px;
+            }
+
+            span.d-flex {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="request"] {
+                border: none;
+                border-bottom: 1px solid #6b6b6b;
+                padding: 5px 0px 15px;
+                outline: none;
+                background-color: transparent;
+            }
+
+            input[type="text"] {
+                margin-right: 25px;
+            }
+
+            input[type="text"],
+            input[type="tel"] {
+                width: 50%;
+            }
+
+            input[type="request"] {
+                width: 100%;
+            }
+
+            input[type="text"]:focus,
+            input[type="tel"]:focus,
+            input[type="request"]:focus {
+                border: none;
+                border-bottom: 1px solid #5d97d5;
+            }
+
+            input[type="submit"] {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                width: 100%;
+                font-family: Inter;
+                font-weight: 700;
+                font-style: 18px;
+                transition: 0.5s all;
+                margin-top: 20px;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #72CCE6;
+                transition: 0.5s all;
+                color: #ffffff;
+            }
+        }
+
+        @media screen and(max-width:1200px) {
+            &_img {
+                width: 352px;
+                height: 250px;
+            }
+        }
+
+        @media screen and(max-width:992px) {
+            &_img {
+                width: 250px;
+                height: 180px;
+            }
+        }
+
+        @media screen and(max-width:768px) {
+            & {
+                display: block;
+
+                &_img {
+                    margin: 0 auto 30px;
+                    width: 352px;
+                    height: 250px;
+                }
+
+                &_info {
+                    text-align: center;
+                    width: 100%;
+
+                    p {
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        @media screen and(max-width:576px) {
+            &_img {
+                margin: 0 auto 15px;
+                width: 250px;
+                height: 180px;
+            }
+
+            &_info {
+                h4 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+            }
+
+            input[type="submit"] {
+                font-size: 12px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        & {
+            padding: 25px 0px;
+        }
+    }
+
+
+}

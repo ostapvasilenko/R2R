@@ -1,76 +1,93 @@
-.services{
-    background-color: #FAFAFB;
-    padding: 0px 0px 10px 0px;
+.services {
+  background-color: #FAFAFB;
+  padding: 0px 0px 40px 0px;
 
-    &__title {
-        font-family: Rubik;
-        font-size: 24px;
-        font-weight: 400;
+  &__title {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__line {
+    background-color: #F5CA61;
+    height: 4px;
+    width: 120px;
+    margin-top: 15px;
+  }
+
+  &__accordion {
+    margin: 0px 0px 0px 20px;
+
+    &-item {
+      margin-bottom: 10px;
     }
 
-    &__line {
-        background-color: #F5CA61;
-        height: 4px;
-        width: 120px;
-        margin-top: 15px;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #72CCE6;
+      padding: 10px 15px 10px 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: Roboto;
+      font-size: 20px;
+      color: #FFFFFF;
     }
-    .accordion {
-        margin: 0px 0px 0px 20px;
-      }
-      
-      .accordion-item {
-        margin-bottom: 10px;
-      }
-      
-      .accordion-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #72CCE6;
-        padding: 10px 15px 15px 25px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        font-family: Roboto;
-        font-size: 20px;
-      }
-      
-      .accordion-header:hover {
-        background-color: #039CC8;
-      }
-      
-      .accordion-header h2 {
-        margin: 0;
-        color: #FFFFFF;
-      }
-      
-      .accordion-icon {
-        transition: transform 0.3s;
-        height: 12px;
-        width: 12px;
-        margin-top: -10px;
-      }
-      
-      .accordion-content {
-        display: none;
-        padding: 15px 25px;
-        background-color: #fff;
-        overflow: hidden;
-        max-height: 0;
-        transition:  0.8s ease-in;
-        ul{
-            list-style-type: disc;
-            li{
-                padding: 10px 0px;
-            }
+
+    &-header:hover {
+      background-color: #039CC8;
+    }
+
+    &-icon {
+      transition: transform 0.3s;
+      height: 12px;
+      width: 12px;
+      margin-top: -10px;
+    }
+
+    &-content {
+      display: none;
+      padding: 15px 25px;
+      background-color: #fff;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.8s ease-in;
+
+      ul {
+        li {
+          padding: 10px 0px;
+          font-family: Inter;
+          font-size: 18px;
+          font-weight: 500;
         }
       }
-      
-      .accordion-content.active {
-        display: block;
-        max-height: 1000px;
-        transition:  0.8s ease-in-out;
-        ul{
-            list-style-type: disc !important;
+    }
+
+    &-content.active {
+      display: block;
+      max-height: 1000px;
+      transition: 0.8s ease-in-out;
+    }
+
+    @media screen and(max-width:1200px) {
+      &-content {
+        ul {
+          li {
+            font-size: 16px;
+          }
         }
       }
+    }
+
+    @media screen and(max-width:576px) {
+      &-content {
+        ul {
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
