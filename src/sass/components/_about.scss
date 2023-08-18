@@ -1,0 +1,332 @@
+.about {
+    background-color: #FAFAFB;
+    padding: 20px 0px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_img {
+            background-image: url('../img/about/about-title.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 680px;
+            height: 255px;
+        }
+
+        &_text {
+            font-family: Rubik;
+            font-weight: 400;
+            font-size: 24px;
+            width: 124px;
+            margin-right: 30px;
+            text-align: center;
+        }
+
+        &_line {
+            background-color: #E0F1F7;
+            height: 94px;
+            width: 45%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+
+        &_img {
+            width: 50%;
+        }
+
+        &_text {
+            width: 50%;
+            padding-right: 100px;
+
+            h3 {
+                font-family: Inter;
+                font-weight: 600;
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 20px;
+            }
+        }
+    }
+
+    #about__options_size {
+        margin-left: 70px;
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+
+        span {
+            display: block;
+            padding-left: 40px;
+            padding-right: 230px;
+        }
+
+        &_title {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        &_text {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and(max-width:1400px) {
+        &__title {
+            width: 100%;
+
+            &_img {
+                width: 40%;
+                height: 200px;
+            }
+
+            &_line {
+                width: 40%;
+            }
+
+            &_text {
+                width: 20%;
+            }
+        }
+
+        #about__options_size {
+            margin-left: 0px;
+        }
+
+        &__info {
+            &_text {
+                padding-right: 20px;
+
+                h3 {
+                    font-size: 35px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            &_img {
+                width: 370px;
+            }
+        }
+
+        &__options {
+            span {
+                padding-right: 140px;
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+
+        &__title {
+            width: 100%;
+
+            &_img {
+                width: 40%;
+                height: 140px;
+            }
+
+            &_text {
+                width: 20%;
+            }
+
+            &_line {
+                width: 40%;
+            }
+        }
+
+        &__info {
+            &_text {
+                padding-right: 0px;
+            }
+        }
+
+        &__options {
+            span {
+                padding-right: 50px;
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+
+        &__title {
+            &_img {
+                width: 400px;
+                height: 140px;
+            }
+        }
+
+        &__info {
+            &_text {
+                h3 {
+                    font-size: 30px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            &_img {
+                width: 300px;
+            }
+        }
+
+        &__options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+
+            &_img {
+                width: 50px;
+            }
+
+            span {
+                padding-left: 0;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+
+        &__title {
+            width: 100%;
+
+            &_img {
+                width: 40%;
+                height: 120px;
+                margin-right: 10px;
+            }
+
+            &_text {
+                margin-right: 10px;
+                font-size: 22px;
+                width: 20%;
+            }
+
+            &_line {
+                width: 40%;
+            }
+        }
+
+        &__info {
+            display: block;
+            text-align: center;
+
+            &_img {
+                width: 100%;
+
+                img {
+                    width: 350px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &_text {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+
+        &__title {
+            &_img {
+                width: 40%;
+                height: 70px;
+                margin-right: 10px;
+            }
+
+            &_text {
+                font-size: 18px;
+                width: 20%;
+            }
+
+            &_line {
+                width: 40%;
+                height: 50px;
+            }
+        }
+
+        &__info {
+            display: block;
+            text-align: center;
+
+            &_img {
+                width: 100%;
+
+                img {
+                    width: 250px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &_text {
+                width: 100%;
+
+                h3 {
+                    font-size: 24px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__options {
+            &_title {
+                font-size: 14px;
+            }
+
+            &_text {
+                font-size: 12px;
+            }
+
+            &_img {
+                width: 30px;
+                height: 35px;
+            }
+
+            span {
+                padding: 0px 0px 0px 10px;
+            }
+        }
+    }
+
+    @media screen and(max-width:410px) {
+        &__title {
+            &_text {
+                font-size: 14px;
+            }
+        }
+
+        &__info {
+            &_text {
+                h3 {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
