@@ -28,20 +28,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Swiper Slider
 
+// let swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   keyboard: {
+//     enabled: true,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
+
 let swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
   slidesPerView: 3,
-  spaceBetween: 30,
-  keyboard: {
-    enabled: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: true,
   },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 });
+swiper.slideTo(1, 0);
 
 
