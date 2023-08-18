@@ -1,0 +1,17 @@
+.works {
+    background-color: #FAFAFB;
+    padding: 40px 0px 10px;
+
+    &__title {
+        font-family: Rubik;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    &__line {
+        background-color: #F5CA61;
+        height: 4px;
+        width: 120px;
+        margin-top: 15px;
+    }
+}
