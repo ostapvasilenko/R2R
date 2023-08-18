@@ -1,0 +1,135 @@
+.partners {
+    background-color: #FAFAFB;
+    padding: 40px 0px 20px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        &_img {
+            background-image: url('../img/partners/title-img.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 40%;
+            height: 180px;
+        }
+
+        &_text {
+            font-family: Rubik;
+            font-weight: 400;
+            font-size: 24px;
+            width: 124px;
+            text-align: center;
+            width: 20%;
+        }
+
+        &_line {
+            background-color: #E0F1F7;
+            height: 94px;
+            width: 40%;
+        }
+    }
+
+    &__img {
+        margin-top: 30px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and(max-width:1400px) {
+        &__title {
+            &_img {
+                height: 140px;
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__title {
+            &_img {
+                height: 100px;
+                width: 37%;
+            }
+
+            &_text {
+                padding: 0px 15px;
+                width: 26%;
+            }
+
+            &_line {
+                height: 66px;
+                width: 37%;
+            }
+        }
+
+        &__img {
+            a {
+                padding: 0px 15px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__title {
+            &_img {
+                height: 80px;
+            }
+
+            &_text {
+                padding: 0px 8px;
+                font-size: 22px;
+            }
+
+            &_line {
+                height: 66px;
+            }
+        }
+
+        &__img {
+            margin-top: 15px;
+
+            a {
+                padding: 0px 10px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+            &_img {
+                margin-top: 0px;
+                height: 60px;
+            }
+
+            &_text {
+                padding: 0px 8px;
+                font-size: 18px;
+            }
+
+            &_line {
+                height: 50px;
+            }
+        }
+    }
+
+    @media screen and(max-width:410px) {
+        &__title {
+            &_img {
+                height: 60px;
+            }
+
+            &_text {
+                padding: 0px 8px;
+                font-size: 14px;
+            }
+
+            &_line {
+                height: 50px;
+            }
+        }
+    }
+}
