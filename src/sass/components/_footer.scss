@@ -1,0 +1,210 @@
+.footer {
+    background-color: #FFFFFF;
+    padding: 15px 0px 25px;
+
+    // #footer__position {
+    //     display: flex;
+    //     align-items: center;
+    // }
+
+    &__info {
+        h2 {
+            font-family: Inter;
+            font-weight: 600;
+            font-size: 40px;
+            color: #F5CA61;
+        }
+
+        p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            padding-right: 100px;
+            margin: 5px 0px 15px;
+        }
+
+        a {
+            margin-right: 10px;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: center;
+
+        nav {
+            ul {
+                li {
+                    padding: 8px 0px;
+
+                    a {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: #000000;
+                        transition: 0.5s all;
+                    }
+
+                    :hover {
+                        color: #F5CA61;
+                        transition: 0.5s all;
+                    }
+                }
+            }
+        }
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            li {
+                padding: 10px 0px;
+
+                a {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #000000;
+                    transition: 0.5s all;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            :hover {
+                color: #F5CA61;
+                transition: 0.5s all;
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &__info {
+            p {
+                padding-right: 0;
+            }
+        }
+
+        &__navigation {
+            display: block;
+            margin-left: 40px;
+        }
+
+        &__contact {
+            display: block;
+
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__info {
+            h2 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        &__navigation {
+            margin-left: 20px;
+
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__contact {
+            display: block;
+
+            ul {
+                li {
+                    padding: 10px 0px;
+
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        #footer__position {
+            display: block;
+        }
+
+        &__info {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        &__navigation {
+            margin-left: 0px;
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__contact {
+            margin-left: 70px;
+
+            ul {
+                li {
+                    a {
+                        img {
+                            height: 15px;
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__navigation {
+
+            nav {
+                ul {
+                    li {
+                        padding: 4px 0px;
+
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__contact {
+            margin-left: 0;
+
+            ul {
+                li {
+                    padding: 9px 0px;
+                }
+            }
+        }
+    }
+}
