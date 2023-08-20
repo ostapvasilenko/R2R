@@ -2,17 +2,13 @@
     background-color: #FFFFFF;
     padding: 15px 0px 25px;
 
-    // #footer__position {
-    //     display: flex;
-    //     align-items: center;
-    // }
-
     &__info {
         h2 {
             font-family: Inter;
             font-weight: 600;
             font-size: 40px;
             color: #F5CA61;
+            margin-top: 20px;
         }
 
         p {
@@ -182,6 +178,12 @@
     }
 
     @media screen and(max-width:576px) {
+        &__info {
+            h2 {
+                margin-top: 0;
+            }
+        }
+
         &__navigation {
 
             nav {

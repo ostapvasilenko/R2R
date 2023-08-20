@@ -64,4 +64,3 @@ let swiper = new Swiper(".mySwiper", {
 });
 swiper.slideTo(1, 0);
 
-
