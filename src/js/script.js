@@ -81,3 +81,25 @@ function openPage(event, pageName) {
 // За замовчуванням відкриємо першу сторінку
 document.getElementById("page2").style.display = "block";
 document.getElementsByClassName("tab-button")[0].className += " active";
+
+
+
+
+const individualTab = document.getElementById('individualTab');
+    const singleTab = document.getElementById('singleTab');
+    const individualContent = document.getElementById('individualContent');
+    const singleContent = document.getElementById('singleContent');
+
+    individualTab.addEventListener('click', () => {
+      individualContent.classList.add('active');
+      singleContent.classList.remove('active');
+      individualTab.classList.add('active');
+      singleTab.classList.remove('active');
+    });
+
+    singleTab.addEventListener('click', () => {
+      singleContent.classList.add('active');
+      individualContent.classList.remove('active');
+      singleTab.classList.add('active');
+      individualTab.classList.remove('active');
+    });

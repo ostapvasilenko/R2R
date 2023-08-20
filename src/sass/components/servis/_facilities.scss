@@ -1,0 +1,98 @@
+.facilities {
+    // background-color: #FAFAFB;
+    padding: 20px 0px;
+
+    &__tabs {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    &__tab {
+        padding: 10px 0px;
+        text-decoration: none;
+        color: #000000;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+
+    &__tab.active {
+        border-bottom: 4px solid #F5CA61;
+    }
+
+    #facilities__position {
+        display: flex;
+        justify-content: center;
+    }
+    #facilities__size{
+        padding: 0px 30px;
+    }
+
+    &__content {
+        display: none;
+        margin-top: 50px;
+
+        a {
+            color: #000000;
+            width: 100%;
+            img{
+                width: 330px;
+            }
+
+            h4 {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 20px;
+                text-align: center;
+                margin: 15px 0px 10px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 16px;
+                padding-right: 40px;
+            }
+        }
+
+        &_btn {
+            a {
+                color: #039CC8;
+                background-color: rgb(255, 255, 255);
+
+                img {
+                    margin-left: 10px;
+                    width: 12px;
+                    height: 12px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+
+    &__content.active {
+        display: flex;
+    }
+
+    &__right-text {
+
+        a {
+            color: #000000;
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &_line {
+            height: 2px;
+            background-color: #000000;
+            width: 90px;
+            margin-top: 5px;
+        }
+    }
+}
