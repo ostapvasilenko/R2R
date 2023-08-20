@@ -55,16 +55,38 @@ img, svg {
 //@import "libs/slick-theme.scss";
 @import "libs/slick.scss";
 
-@import "components/header";
-@import "components/hero";
-@import "components/info";
-@import "components/services";
-@import "components/form";
-@import "components/questions";
-@import "components/reviews";
-@import "components/about";
-@import "components/partners";
-@import "components/works";
-@import "components/footer";
+@import "components/main/header";
+@import "components/main/hero";
+@import "components/main/info";
+@import "components/main/services";
+@import "components/main/form";
+@import "components/main/questions";
+@import "components/main/reviews";
+@import "components/main/about";
+@import "components/main/partners";
+@import "components/main/works";
+@import "components/main/footer";
+@import "components/servis/hero";
 
 
+.tabs {
+    overflow: hidden;
+  }
+  
+  .tab-button {
+    background-color: #f1f1f1;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    background-color: #ddd;
+  }
+  
+  .tab-content {
+    display: none;
+  }
