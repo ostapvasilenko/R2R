@@ -1,6 +1,6 @@
 .facilities {
-    // background-color: #FAFAFB;
-    padding: 20px 0px;
+    background-color: #FAFAFB;
+    padding: 20px 0px 20px;
 
     &__tabs {
         display: flex;
@@ -32,6 +32,16 @@
 
     #facilities__size {
         padding: 0px 30px;
+        margin-bottom: 40px;
+    }
+
+    #facilities__bg-color {
+        background-color: #F9F9F9;
+        padding-bottom: 20px;
+        box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.67);
+        border-radius: 0px 0px 5px 5px;
     }
 
     &__content {
@@ -59,29 +69,41 @@
                 font-weight: 400;
                 font-size: 16px;
                 padding-right: 40px;
+                margin-left: 10px;
             }
         }
 
         &_btn {
+            margin-left: 10px;
+
             a {
                 color: #039CC8;
-                background-color: rgb(255, 255, 255);
+                background-color: #F9F9F9;
+                display: flex;
+                align-self: center;
+                margin-top: 15px;
+            }
 
-                img {
-                    margin-left: 10px;
-                    width: 12px;
-                    height: 12px;
-                    margin-top: 25px;
-                }
+            &-img {
+                margin-left: 10px;
+                width: 12px;
+                height: 12px;
+                margin-top: 5px;
+                background-image: url('../img/servis/facilities/stroke.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
         }
     }
 
     &__content.active {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__right-text {
+        margin-right: 20px;
 
         a {
             color: #000000;
@@ -95,6 +117,60 @@
             background-color: #000000;
             width: 90px;
             margin-top: 5px;
+        }
+    }
+
+    @media screen and(max-width:1400px) {
+        #facilities__size {
+            padding: 0px 15px;
+        }
+
+        &__content {
+            a {
+                p {
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        #facilities__position {
+            margin-top: -20px;
+        }
+
+        &__tabs {
+            font-size: 20px;
+        }
+
+        &__tab {
+            margin-right: 20px;
+        }
+
+        & {
+            padding: 20px 0px 0px;
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__content {
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        &__tabs {
+            font-size: 16px;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and(max-width:400px) {
+        &__tab {
+            margin-right: 0px;
         }
     }
 }
