@@ -1,0 +1,199 @@
+.previous-works {
+    background-color: #FAFAFB;
+    padding: 0px 0px 30px;
+
+    &__block {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        &_img {
+            width: 55%;
+            display: flex;
+            align-items: center;
+
+            span {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 330px;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-last {
+                img {
+                    width: 384px;
+                    height: 486px;
+                    box-shadow:
+                        -15px 0px 0px 15px rgb(255, 255, 255),
+                        0px -15px 0px 0px rgb(255, 255, 255),
+                        0px 15px 0px 0px rgb(255, 255, 255);
+                }
+            }
+        }
+
+        &_info {
+            width: 45%;
+            margin-left: 30px;
+
+            h2 {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 24px;
+                color: #000000;
+            }
+
+            &-line {
+                width: 120px;
+                height: 4px;
+                background-color: #F5CA61;
+                margin-top: 10px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 18px;
+                margin: 35px 0px;
+                padding-right: 90px;
+            }
+
+            button {
+                font-family: Inter;
+                font-weight: 700;
+                font-size: 20px;
+                color: #ffffff;
+                background-color: #039CC8;
+                padding: 15px 100px;
+            }
+        }
+
+        @media screen and(max-width:1400px) {
+            &_img {
+                width: 60%;
+
+                &-last {
+                    img {
+                        width: 384px;
+                        height: 420px;
+                    }
+                }
+            }
+
+            &_info {
+                width: 40%;
+
+                p {
+                    padding-right: 10px;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        @media screen and(max-width:1200px) {
+            &_img {
+                width: 55%;
+
+                &-last {
+                    img {
+                        width: 350px;
+                        height: 360px;
+                    }
+                }
+            }
+
+            &_info {
+                width: 45%;
+
+                p {
+                    padding-right: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        @media screen and(max-width:992px) {
+            &_img {
+                span {
+                    img {
+                        width: 200px;
+                    }
+                }
+
+                width: 55%;
+
+                &-last {
+                    img {
+                        width: 180px;
+                        height: 270px;
+                        box-shadow:
+                            -10px 0px 0px 10px rgb(255, 255, 255),
+                            0px -10px 0px 0px rgb(255, 255, 255),
+                            0px 10px 0px 0px rgb(255, 255, 255);
+                    }
+                }
+            }
+
+            &_info {
+                width: 45%;
+
+                p {
+                    padding-right: 0px;
+                    font-size: 14px;
+                }
+
+                button {
+                    padding: 15px 60px;
+                }
+            }
+        }
+
+        @media screen and(max-width:768px) {
+            & {
+                flex-wrap: wrap;
+
+                &_img {
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                &_info {
+                    width: 100%;
+                    margin-left: 0;
+                    text-align: center;
+
+                    h2 {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        @media screen and(max-width:576px) {
+            &_img {
+                span {
+                    img {
+                        width: 150px;
+                    }
+                }
+
+                &-last {
+                    img {
+                        width: 180px;
+                        height: auto;
+                    }
+                }
+            }
+
+            &_info {
+                button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
