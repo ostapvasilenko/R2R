@@ -1,0 +1,56 @@
+.one-service-header {
+    background-color: #FAFAFB;
+    padding: 25px 0px;
+
+    nav {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    color: #000000;
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 16px;
+
+                    img {
+                        margin: 0px 10px 5px 0px;
+                    }
+                }
+            }
+
+            @media screen and(max-width:992px) {
+
+                li {
+                    padding: 0px 10px;
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        & {
+            nav {
+                display: flex;
+                justify-content: center;
+
+                ul {
+                    display: block;
+
+                    li {
+                        padding: 5px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
