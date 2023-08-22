@@ -1,0 +1,103 @@
+.work-stages {
+    background-color: #FAFAFB;
+    padding: 20px 0px 90px;
+
+    &__title {
+        h2 {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 24px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        &_line {
+            width: 120px;
+            height: 4px;
+            background-color: #F5CA61;
+            margin: 0 auto;
+        }
+    }
+
+    #work-stages__position {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 80px;
+
+        &_title {
+            min-width: 43px;
+
+            h3 {
+                font-family: Inter;
+                font-weight: 600;
+                font-size: 32px;
+                color: #F5CA61;
+                width: 100%;
+            }
+        }
+
+        &_line {
+            min-width: 65px;
+            height: 4px;
+            background-color: #F5CA61;
+            transform: rotate(90deg);
+        }
+
+        p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 18px;
+            color: #000000;
+            padding-right: 40px;
+            line-height: 22px;
+        }
+    }
+
+    @media screen and(max-width:1400px) {
+        &__info {
+            p {
+                font-size: 16px;
+                padding-right: 20px;
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__info {
+            p {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        & {
+            padding: 0px 0px 60px;
+        }
+
+        #work-stages__position {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__info {
+            margin-top: 40px;
+
+            &_title {
+                h3 {
+                    font-size: 26px;
+                }
+            }
+
+            &_line {
+                min-width: 40px;
+            }
+        }
+    }
+
+}
