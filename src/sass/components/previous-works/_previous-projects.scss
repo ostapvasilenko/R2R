@@ -1,0 +1,179 @@
+.previous-projects {
+    background-color: #FAFAFB;
+    padding: 60px 0px 40px;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+
+        h2 {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 24px;
+            color: #000000;
+        }
+
+        &_line {
+            background-color: #F5CA61;
+            height: 4px;
+            width: 500px;
+            margin: 10px 0px 50px;
+        }
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+
+        margin: 0 auto;
+
+        &_card {
+            position: relative;
+            border-radius: 3px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+
+            .card-content {
+                position: relative;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 3px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0.3;
+                z-index: 1;
+                transition: background-color 0.5s, opacity 0.5s;
+            }
+
+            .card-text {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 20px;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: Inter;
+                z-index: 2;
+            }
+
+            #card-content__last_line {
+                height: 2px;
+                width: 38px;
+                background-color: #ffffff;
+                transform: translateX(-50%);
+                transform: rotate(90deg);
+                margin: 30px auto -35px;
+            }
+
+            #card-content__last {
+                display: none;
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: bottom 0.5s, opacity 0.5s, transform 0.5s;
+                text-align: center;
+                color: #ffffff;
+                z-index: 4;
+
+                p {
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+                }
+
+                h5 {
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+
+            &:hover {
+                &::before {
+                    background-color: #F5CA61A1;
+                    opacity: 0.73;
+                }
+
+                .card-text {
+                    opacity: 0;
+                }
+
+                #card-content__last {
+                    display: block;
+                    bottom: 20px;
+                    opacity: 1;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:1400px) {
+        &__container {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-column-gap: 30px;
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &__container {
+            grid-column-gap: 20px;
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        &__title {
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__title {
+
+            h2 {
+                font-size: 16px;
+            }
+
+            &_line {
+                height: 2px;
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+
+        &__container {
+            grid-row-gap: 10px;
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+
+            h2 {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
