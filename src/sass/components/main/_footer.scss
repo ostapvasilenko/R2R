@@ -1,5 +1,5 @@
 .footer {
-    background-color: #FFFFFF;
+    background-color: #000000;
     padding: 15px 0px 25px;
 
     &__info {
@@ -7,7 +7,7 @@
             font-family: Inter;
             font-weight: 600;
             font-size: 40px;
-            color: #F5CA61;
+            color: #FFFFFF;
             margin-top: 20px;
         }
 
@@ -17,6 +17,7 @@
             font-size: 16px;
             padding-right: 100px;
             margin: 5px 0px 15px;
+            color: #FFFFFF;
         }
 
         a {
@@ -37,7 +38,7 @@
                         font-family: Montserrat;
                         font-weight: 400;
                         font-size: 18px;
-                        color: #000000;
+                        color: #FFFFFF;
                         transition: 0.5s all;
                     }
 
@@ -62,7 +63,7 @@
                     font-family: Montserrat;
                     font-weight: 400;
                     font-size: 18px;
-                    color: #000000;
+                    color: #FFFFFF;
                     transition: 0.5s all;
                     display: flex;
                     align-items: center;

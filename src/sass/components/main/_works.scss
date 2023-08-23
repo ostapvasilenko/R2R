@@ -37,4 +37,14 @@
     .swiper-button-prev {
         color: #F5CA61;
     }
+    @media screen and(max-width:768px) {
+        &{
+            padding: 20px 0px;
+        }
+    }
+    @media screen and(max-width:576px) {
+        &{
+            padding: 0px;
+        }
+    }
 }

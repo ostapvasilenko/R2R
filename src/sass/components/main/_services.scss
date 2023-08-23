@@ -26,17 +26,20 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: #72CCE6;
+      background-color: #FFFFFF;
       padding: 10px 15px 10px 25px;
       cursor: pointer;
       transition: background-color 0.3s;
       font-family: Roboto;
       font-size: 20px;
-      color: #FFFFFF;
+      color: #000000;
+      transition: 0.5s all;
     }
 
     &-header:hover {
-      background-color: #039CC8;
+      background-color: #FFB500;
+      color: #FFFFFF;
+      transition: 0.5s all;
     }
 
     &-icon {
