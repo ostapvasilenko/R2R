@@ -43,9 +43,11 @@
 
     @media screen and(max-width:768px) {
         &-top {
+            display: flex;
+            justify-content: center;
+
             ul {
                 display: block;
-                text-align: center;
 
                 li {
                     padding: 5px 0px;
@@ -148,9 +150,15 @@
             }
         }
 
-        @media screen and(max-width:360px) {
+        @media screen and(max-width:450px) {
             &__social {
-                margin-right: 24%;
+                margin-right: 25%;
+            }
+        }
+
+        @media screen and(max-width:370px) {
+            &__social {
+                margin-right: 20%;
             }
         }
     }
@@ -159,7 +167,7 @@
 .menu__icon {
     height: 20px;
     width: 30px;
-    margin-top: 20px;
+    margin-top: 60px;
     position: absolute;
     top: 100px;
     right: 6%;

@@ -1,0 +1,214 @@
+.advantages {
+    background-color: #FAFAFB;
+    padding: 10px 0px 30px;
+
+    &__title {
+        text-align: center;
+
+        h2 {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        &_line {
+            width: 364px;
+            height: 4px;
+            background-color: #F5CA61;
+            margin: 10px auto 50px;
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &_img {
+            width: 35%;
+        }
+
+        &_info {
+            width: 65%;
+            position: relative;
+            padding: 20px;
+
+            h3 {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 40px;
+                padding: 0px 20px 0px 110px;
+            }
+
+            &-img {
+                background-image: url('../img/previous-works/advantage/cam.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 52px;
+                width: 68px;
+                margin-right: 40px;
+            }
+        }
+
+        &_info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 63px;
+            height: 44px;
+            border-top: 2px solid #F5CA61;
+            border-left: 2px solid #F5CA61;
+            border-radius: 5px 0px 0px 0px;
+        }
+
+        #advantages__block_info-position {
+            display: flex;
+        }
+
+        #advantages__block_info-text {
+            padding-right: 60px;
+        }
+
+        #advantages__block_img {
+            display: none;
+        }
+    }
+
+    @media screen and(max-width:1400px) {
+        &__block {
+            &_info {
+                width: 70%;
+            }
+
+            #advantages__block_position {
+                margin-left: 30px;
+            }
+
+            &_img {
+                width: 30%;
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        &__block {
+            &_info {
+                width: 60%;
+
+                p {
+                    font-size: 14px;
+                    margin-top: 20px;
+                    padding: 0px 0px 0px 70px;
+                }
+
+                &-img {
+                    height: 36px;
+                    width: 48px;
+                    margin-right: 20px;
+                }
+            }
+
+            &_img {
+                width: 40%;
+            }
+
+            #advantages__block_info-text {
+                padding-right: 30px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        & {
+            padding-bottom: 0;
+        }
+
+        &__title {
+
+            &_line {
+                margin: 10px auto 25px;
+            }
+        }
+
+        &__block {
+            display: block;
+
+            &_img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            &_info {
+                width: 100%;
+
+                p {
+                    padding-left: 0;
+                }
+            }
+
+            #advantages__block_img {
+                display: block;
+                margin: 0px auto 20px;
+            }
+
+            #advantages__block_img-last {
+                display: none;
+            }
+
+            #advantages__block_position {
+                margin-left: 0px;
+                margin-top: 20px;
+            }
+
+            #advantages__block_info-text {
+                padding-right: 0px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+
+            &_line {
+                margin: 10px auto 25px;
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        &__block {
+
+            &_info {
+                h3 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+
+                &-img {
+                    height: 26px;
+                    width: 34px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
