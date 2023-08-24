@@ -105,7 +105,7 @@ function openPage(event, pageName) {
 }
 
 // За замовчуванням відкриємо першу сторінку
-document.getElementById("page1").style.display = "block";
+document.getElementById("page2").style.display = "block";
 document.getElementsByClassName("tab-button")[0].className += " active";
 
 
@@ -128,4 +128,15 @@ singleTab.addEventListener('click', () => {
   individualContent.classList.remove('active');
   singleTab.classList.add('active');
   individualTab.classList.remove('active');
+});
+
+
+//PopUp on page Servis
+
+document.getElementById("popupButton").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "block";
+});
+
+document.getElementById("closePopup").addEventListener("click", function() {
+  document.getElementById("popup").style.display = "none";
 });
