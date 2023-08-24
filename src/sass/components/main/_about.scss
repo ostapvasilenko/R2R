@@ -29,7 +29,6 @@
 
     &__info {
         width: 67%;
-        position: relative;
         z-index: 1;
 
         &_background {
@@ -125,7 +124,7 @@
 
         &__info {
             width: 100%;
-            top: 400px;
+            margin-top: 400px;
 
             &-options {
                 justify-content: space-between;
