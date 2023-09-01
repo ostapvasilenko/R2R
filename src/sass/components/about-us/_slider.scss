@@ -1,0 +1,183 @@
+.about-us-slider {
+    background-color: #FAFAFB;
+
+    &__title {
+
+        margin-top: 25px;
+
+        h2 {
+            font-family: Rubik;
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+        &_line {
+            height: 4px;
+            width: 120px;
+            background-color: #F5CA61;
+            margin-top: 10px;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 120px 0px 30px;
+    }
+
+    .swiper-slide {
+        position: relative;
+        background-color: #E9EFFD80;
+        width: 328px;
+        height: 282px;
+        transition: 0.5s all;
+        margin-bottom: 20px;
+        transition: transform 0.8s ease;
+
+        img {
+            width: 162px;
+            height: 152px;
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        &__info {
+            position: absolute;
+            bottom: 0px;
+            padding: 20px 30px;
+
+            h3 {
+                font-family: Inter;
+                font-weight: 600;
+                font-size: 20px;
+                color: #000000;
+                text-align: center;
+                line-height: 24px;
+            }
+
+            h4 {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 20px;
+                color: #000000;
+                text-align: center;
+                line-height: 24px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 16px;
+                color: #000000;
+                margin: 10px 0px;
+            }
+
+            #swiper-slide__info_img {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+            }
+
+            &_instagram,
+            &_telegram {
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 0px 15px;
+            }
+
+            &_instagram {
+                background-image: url('../img/about-us/slider/instagram.png');
+                height: 20px;
+                width: 20px;
+            }
+
+            &_telegram {
+                background-image: url('../img/about-us/slider/telegram.png');
+                height: 20px;
+                width: 22px;
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        background-color: #FFB500;
+        transition: 0.5s all;
+        width: 330px;
+        height: 300px;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.8s ease;
+
+        img {
+            width: 220px;
+            height: 210px;
+            top: -110px;
+        }
+
+        h3,
+        h4,
+        p {
+            color: #ffffff;
+        }
+
+        h3.h4 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #swiper-slide__info_img {
+            display: none;
+        }
+
+        #swiper-slide__info_img-last {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            height: 30px;
+        }
+
+        &_instagram-last,
+        &_telegram-last {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px 15px;
+        }
+
+        &_instagram-last {
+            background-image: url('../img/about-us/slider/instagram-last.png');
+            height: 20px;
+            width: 20px;
+        }
+
+        &_telegram-last {
+            background-image: url('img/about-us/slider/telegram-last.png');
+            height: 20px;
+            width: 22px;
+        }
+        
+    }
+
+    .swiper-pagination {
+        margin-top: 50px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #000000;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #000000;
+    }
+
+}

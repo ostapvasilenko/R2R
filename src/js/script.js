@@ -57,10 +57,10 @@ function calculateSlidesPerView() {
 }
 
 // Додаємо обробник події для оновлення слайдера при зміні розміру вікна
-window.addEventListener("resize", () => {
-  reviewsSwiper.params.slidesPerView = calculateSlidesPerView();
-  reviewsSwiper.update();
-});
+// window.addEventListener("resize", () => {
+//   reviewsSwiper.params.slidesPerView = calculateSlidesPerView();
+//   reviewsSwiper.update();
+// });
 
 
 
@@ -111,7 +111,7 @@ document.getElementsByClassName("tab-button")[0].className += " active";
 
 //Tabs on page Servis
 
-const individualTab = document.getElementById('individualTab');
+/*const individualTab = document.getElementById('individualTab');
 const singleTab = document.getElementById('singleTab');
 const individualContent = document.getElementById('individualContent');
 const singleContent = document.getElementById('singleContent');
@@ -129,7 +129,7 @@ singleTab.addEventListener('click', () => {
   singleTab.classList.add('active');
   individualTab.classList.remove('active');
 });
-
+*/
 
 //PopUp on page Servis
 
@@ -140,3 +140,32 @@ document.getElementById("popupButton").addEventListener("click", function() {
 document.getElementById("closePopup").addEventListener("click", function() {
   document.getElementById("popup").style.display = "none";
 });
+
+//Slider on page About-us
+
+let swiper = new Swiper(".about-us__swipper", {
+  initialSlide: 1,  // Початковий слайд буде другим (індекс 1)
+  effect: "coverflow",
+  slidesPerView: 3,
+  spaceBetween: 45,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 3,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  initialSlide: 1,
+});
+

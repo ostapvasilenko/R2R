@@ -22,7 +22,8 @@
         <button class="tab-button" onclick="openPage(event, 'page3')">One-Service</button>
         <button class="tab-button" onclick="openPage(event, 'page4')">Previous-Works</button>
         <button class="tab-button" onclick="openPage(event, 'page5')">Info</button>
-        <button class="tab-button" onclick="openPage(event, 'page6')">About us</button>
+        <button class="tab-button" onclick="openPage(event, 'page6')">About-us</button>
+        <button class="tab-button" onclick="openPage(event, 'page7')">Contact</button>
     </div>
 
     <div id="page1" class="tab-content">
@@ -83,6 +84,12 @@
         @@include("components/main/_footer.html")
     </div>
     <div id="page6" class="tab-content">
+        @@include("components/main/_header.html")
+        @@include("components/about-us/_hero.html")
+        @@include("components/about-us/_title.html")
+        @@include("components/about-us/_slider.html")
+    </div>
+    <div id="page7" class="tab-content">
         @@include("components/main/_header.html")
         @@include("components/contact/_hero.html")
         @@include("components/contact/_form.html")
