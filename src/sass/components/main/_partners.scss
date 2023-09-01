@@ -1,6 +1,6 @@
 .partners {
     background-color: #FAFAFB;
-    padding: 40px 0px 20px;
+    padding: 40px 0px 60px;
 
     &__title {
         display: flex;
@@ -55,6 +55,10 @@
     }
 
     @media screen and(max-width:768px) {
+        & {
+            padding-bottom: 15px;
+        }
+
         &__title {
 
             &_text {
