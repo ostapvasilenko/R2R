@@ -91,7 +91,7 @@ const worksSwiper = new Swiper(".mySwiper", {
 //Tabs
 
 function openPage(event, pageName) {
-  var i, tabContent, tabButton;
+  let i, tabContent, tabButton;
   tabContent = document.getElementsByClassName("tab-content");
   for (i = 0; i < tabContent.length; i++) {
     tabContent[i].style.display = "none";
@@ -105,7 +105,7 @@ function openPage(event, pageName) {
 }
 
 // За замовчуванням відкриємо першу сторінку
-document.getElementById("page6").style.display = "block";
+document.getElementById("page5").style.display = "block";
 document.getElementsByClassName("tab-button")[0].className += " active";
 
 
@@ -133,11 +133,11 @@ singleTab.addEventListener('click', () => {
 
 //PopUp on page Servis
 
-document.getElementById("popupButton").addEventListener("click", function() {
+document.getElementById("popupButton").addEventListener("click", function () {
   document.getElementById("popup").style.display = "block";
 });
 
-document.getElementById("closePopup").addEventListener("click", function() {
+document.getElementById("closePopup").addEventListener("click", function () {
   document.getElementById("popup").style.display = "none";
 });
 
@@ -167,5 +167,49 @@ let swiper = new Swiper(".about-us__swipper", {
     clickable: true,
   },
   initialSlide: 1,
+});
+
+// Slider on page Info
+
+
+let swiperInfo = new Swiper(".other-projects__swiper", {
+  slidesPerView: 4,
+  centeredSlides: true,
+  spaceBetween: 70,
+  grabCursor: true,
+  initialSlide: 2,
+  breakpoints: {
+    992: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 1,
+    },
+  },
+  on: {
+    resize: function () {
+      if (window.innerWidth < 1200 && window.innerWidth >= 992) {
+        this.params.spaceBetween = 40;
+      } else if (window.innerWidth < 992 && window.innerWidth >= 768) {
+        this.params.slidesPerView = 3;
+        this.params.spaceBetween = 30;
+      } else if (window.innerWidth < 768 && window.innerWidth >= 576) {
+        this.params.slidesPerView = 2;
+        this.params.spaceBetween = 30;
+      } else if (window.innerWidth < 576 && window.innerWidth >= 0) {
+        this.params.slidesPerView = 1;
+      } else {
+        this.params.slidesPerView = 4;
+      }
+      this.update();
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 

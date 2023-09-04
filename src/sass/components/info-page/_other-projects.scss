@@ -1,0 +1,280 @@
+.other-projects {
+    background-color: #FAFAFB;
+    padding: 30px 0px;
+
+    &__title {
+        h2 {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 24px;
+            color: #000000;
+            text-align: center;
+        }
+
+        &_line {
+            background-color: #F5CA61;
+            width: 120px;
+            height: 4px;
+            margin: 10px auto 40px;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide img {
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        min-width: 28%;
+        background-color: #F9F9F9;
+        filter: brightness(0.99) contrast(0.99);
+        box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+
+        &__img {
+            width: 100%;
+            max-height: 190px;
+        }
+
+        &__info {
+            padding: 20px 35px 25px;
+
+            h3 {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 24px;
+                color: #000000;
+            }
+
+            &_desc {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 18px;
+                color: #000000;
+                margin-top: 15px;
+                padding-right: 80px;
+            }
+
+            &_btn {
+                display: flex;
+                align-items: center;
+                color: #000000;
+                font-size: 16px;
+                font-weight: 600;
+                font-family: Inter;
+                margin-top: 40px;
+                transition: 0.3s all;
+
+                &-img {
+                    background-image: url('../img/info-page/other-projects/stroke.png');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 12px;
+                    width: 14px;
+                    margin-left: 15px;
+                    transition: 0.3s all
+                }
+            }
+        }
+    }
+
+    .swiper-slide:hover {
+        .swiper-slide__info {
+            .swiper-slide__info_btn {
+                color: #F5CA61;
+                transition: 0.3s all;
+            }
+
+            .swiper-slide__info_btn-img {
+                background-image: url('../img/info-page/other-projects/stroke-last.png');
+                transition: 0.3s all
+            }
+        }
+    }
+
+    /* Стилізація стрілок внизу слайдера */
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 28px;
+        height: 28px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        bottom: 0px;
+        z-index: 10;
+        transition: background-color 0.3s ease;
+    }
+
+    .swiper__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &_block {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            margin-top: 50px;
+        }
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        content: "";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 12px;
+        width: 8px;
+    }
+
+    /* Стиль стрілки вліво */
+    .swiper-button-next::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider.png');
+        margin-left: 3px;
+        transform: rotate(180deg);
+        transition: 0.3s all;
+    }
+
+    /* Стиль стрілки вправо */
+    .swiper-button-prev::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider.png');
+        margin-right: 3px;
+        transition: 0.3s all;
+    }
+
+    /* Зміна кольору фону при наведенні на стрілки */
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        background-color: #F5CA61;
+        transition: background-color 0.3s ease;
+    }
+
+    .swiper-button-prev:hover::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider-last.png');
+        transition: 0.3s all;
+        transform: rotate(180deg);
+    }
+
+    .swiper-button-next:hover::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider-last.png');
+        transition: 0.3s all;
+        transform: rotate(0deg);
+    }
+
+    @media screen and(max-width:1400px) {
+        .swiper-slide {
+            &__info {
+                padding: 20px 30px 25px;
+
+                &_desc {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:1200px) {
+        .swiper-slide {
+            min-width: 29%;
+
+            &__info {
+                padding: 20px 20px 25px;
+
+                &_desc {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:992px) {
+        .swiper-slide {
+            min-width: 40%;
+        }
+
+        .swiper__button {
+
+            &_block {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__title {
+            h2 {
+                font-size: 22px;
+            }
+
+            &_line {
+                margin-top: 7px;
+                margin-bottom: 25px;
+            }
+        }
+
+        .swiper-slide {
+            &__info {
+                h3 {
+                    font-size: 22px;
+                }
+
+                &_desc {
+                    font-size: 17px;
+                    margin-top: 10px;
+                }
+
+                &_btn {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+            h2 {
+                font-size: 20px;
+            }
+        }
+
+        .swiper-slide {
+            &__img {
+                max-height: 220px;
+            }
+
+            &__info {
+                padding: 15px 15px 20px;
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                &_desc {
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                &_btn {
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        .swiper__button {
+
+            &_block {
+                margin-top: 20px;
+            }
+        }
+    }
+}
