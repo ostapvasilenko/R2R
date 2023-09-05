@@ -1,13 +1,35 @@
 //Mobile menu
-
 $(document).ready(function () {
   $('.menu__icon').click(function () {
-    $('body').toggleClass('menu_shown');
+    $('body, html').toggleClass('menu_shown');
+    disableScroll(); // Вимкнення скролінгу на мобільних пристроях
   });
+
+  $('.mobile a').on("click", function () {
+    $('body, html').removeClass('menu_shown');
+    enableScroll(); // Увімкнення скролінгу на мобільних пристроях
+  });
+
+  function disableScroll() {
+    let scrollPosition = [
+      self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+      self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+    ];
+    let html = $('html');
+    html.data('scroll-position', scrollPosition);
+    html.data('previous-overflow', html.css('overflow'));
+    html.css('overflow', 'hidden');
+    window.scrollTo(scrollPosition[0], scrollPosition[1]);
+  }
+
+  function enableScroll() {
+    let html = $('html');
+    let scrollPosition = html.data('scroll-position');
+    html.css('overflow', html.data('previous-overflow'));
+    window.scrollTo(scrollPosition[0], scrollPosition[1]);
+  }
 });
-$('.mobile a').on("click", function () {
-  $('body').toggleClass('menu_shown');
-})
+
 
 //Acordion
 
@@ -105,7 +127,7 @@ function openPage(event, pageName) {
 }
 
 // За замовчуванням відкриємо першу сторінку
-document.getElementById("page1").style.display = "block";
+document.getElementById("page6").style.display = "block";
 document.getElementsByClassName("tab-button")[0].className += " active";
 
 

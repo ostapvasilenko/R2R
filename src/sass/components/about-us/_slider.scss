@@ -89,21 +89,16 @@
             }
 
             &_instagram {
-                background-image: url('../img/about-us/slider/instagram.png');
                 height: 20px;
                 width: 20px;
             }
 
             &_telegram {
-                background-image: url('../img/about-us/slider/telegram.png');
                 height: 20px;
                 width: 22px;
             }
         }
     }
-
-
-
 
     .swiper-slide-active {
         .swiper-slide__info_instagram {
