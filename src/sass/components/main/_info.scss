@@ -113,6 +113,10 @@
     }
 
     @media screen and(max-width:768px) {
+        &__title {
+            font-size: 22px;
+        }
+
         &__img {
             width: 450px;
             height: 250px;
@@ -148,6 +152,10 @@
     }
 
     @media screen and(max-width:576px) {
+        &__title {
+            font-size: 20px;
+        }
+
         &__img {
             width: 300px;
             height: 180px;

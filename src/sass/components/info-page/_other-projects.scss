@@ -213,9 +213,10 @@
     }
 
     @media screen and(max-width:768px) {
-        &{
+        & {
             padding-bottom: 10px;
         }
+
         &__title {
             h2 {
                 font-size: 22px;

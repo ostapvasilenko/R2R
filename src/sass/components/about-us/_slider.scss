@@ -240,7 +240,19 @@
             margin-bottom: 20px;
 
             h2 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+            h2 {
                 font-size: 20px;
+            }
+
+            &_line {
+                margin-top: 8px;
             }
         }
     }

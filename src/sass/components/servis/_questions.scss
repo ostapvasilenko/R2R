@@ -165,7 +165,7 @@
         }
 
         @media screen and(max-width:1200px) {
-            
+
             &__block {
                 &_info {
                     h3 {
@@ -354,18 +354,20 @@
     }
 
     @media screen and(max-width:1200px) {
-        &{
+        & {
             padding: 30px 0px;
         }
+
         &__info {
             padding: 0px 0px;
         }
     }
 
     @media screen and(max-width:992px) {
-        &{
+        & {
             padding: 10px 0px 30px;
         }
+
         &__img {
             height: 200px;
             width: 350px;
@@ -401,6 +403,10 @@
 
         &__info {
             text-align: center;
+
+            h3 {
+                font-size: 22px;
+            }
         }
 
     }
@@ -413,13 +419,14 @@
 
         &__info {
             h3 {
-                font-size: 22px;
+                font-size: 20px;
             }
 
             p {
                 font-size: 14px;
             }
-            button{
+
+            button {
                 padding: 15px 50px;
             }
         }

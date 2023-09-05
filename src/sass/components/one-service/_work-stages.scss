@@ -99,9 +99,26 @@
             }
         }
     }
+
     @media screen and(max-width:992px) {
-        &{
-            padding: 20px 0px 50px;   
+        & {
+            padding: 20px 0px 50px;
+        }
+    }
+
+    @media screen and(max-width:768px) {
+        &__title {
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+            h2 {
+                font-size: 20px;
+            }
         }
     }
 

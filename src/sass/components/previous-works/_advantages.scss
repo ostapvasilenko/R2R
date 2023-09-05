@@ -129,7 +129,8 @@
             }
         }
     }
-    @media screen and(max-width:992px){
+
+    @media screen and(max-width:992px) {
         padding-bottom: 20px;
     }
 
@@ -139,6 +140,9 @@
         }
 
         &__title {
+            h2 {
+                font-size: 22px;
+            }
 
             &_line {
                 margin: 10px auto 25px;

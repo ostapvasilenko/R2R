@@ -93,4 +93,24 @@
       }
     }
   }
+
+  @media screen and(max-width:768px) {
+    &__title {
+      font-size: 22px;
+    }
+
+    &__line {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and(max-width:567px) {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__line {
+      margin-top: 8px;
+    }
+  }
 }

@@ -106,8 +106,26 @@
     }
 
     @media screen and(max-width:768px) {
+        &__title {
+            font-size: 22px;
+        }
+
+        &__line {
+            margin-top: 12px;
+        }
+
         .swiper-slide {
             padding: 0px 75px;
+        }
+    }
+
+    @media screen and(max-width:576px) {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__line {
+            margin-top: 8px;
         }
     }
 

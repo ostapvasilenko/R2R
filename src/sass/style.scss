@@ -1,49 +1,64 @@
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Links */
 
-a, a:link, a:visited  {
-    text-decoration: none;
+a,
+a:link,
+a:visited {
+  text-decoration: none;
 }
 
-a:hover  {
-    text-decoration: none !important;
+a:hover {
+  text-decoration: none !important;
 }
 
 /* Common */
 
-aside, nav, footer, header, section, main {
-	display: block;
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    font-size: inherit;
-	font-weight: inherit;
-    padding: 0;
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
 }
 
-ul, ul li {
-	list-style: none;
+ul,
+ul li {
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
+  vertical-align: top;
 }
 
-img, svg {
-	max-width: 100%;
-	height: auto;
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 @import "reset_style.scss";
@@ -92,23 +107,23 @@ img, svg {
 
 
 .tabs {
-    overflow: hidden;
-  }
-  
-  .tab-button {
-    background-color: #f1f1f1;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 8px 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .tab-button:hover {
-    background-color: #ddd;
-  }
-  
-  .tab-content {
-    display: none;
-  }
+  overflow: hidden;
+}
+
+.tab-button {
+  background-color: #f1f1f1;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #ddd;
+}
+
+.tab-content {
+  display: none;
+}

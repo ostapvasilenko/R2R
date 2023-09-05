@@ -149,9 +149,10 @@
     }
 
     @media screen and(max-width:768px) {
-        &{
+        & {
             padding-top: 20px;
         }
+
         &__title {
 
             h2 {
