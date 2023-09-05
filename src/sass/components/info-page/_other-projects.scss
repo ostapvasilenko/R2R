@@ -119,6 +119,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 40px;
 
         &_block {
             display: flex;
@@ -212,6 +213,9 @@
     }
 
     @media screen and(max-width:768px) {
+        &{
+            padding-bottom: 10px;
+        }
         &__title {
             h2 {
                 font-size: 22px;

@@ -142,10 +142,9 @@
     }
 
     @media screen and(max-width:992px) {
-
-        // &__block {
-        //     width: 90%;
-        // }
+       &{
+        padding: 0px 0px 20px;
+       }
         #one-service-product__position {
             justify-content: space-around;
         }

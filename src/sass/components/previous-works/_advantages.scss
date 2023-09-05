@@ -129,10 +129,13 @@
             }
         }
     }
+    @media screen and(max-width:992px){
+        padding-bottom: 20px;
+    }
 
     @media screen and(max-width:768px) {
         & {
-            padding-bottom: 0;
+            padding-bottom: 20px;
         }
 
         &__title {
@@ -153,6 +156,7 @@
 
             &_info {
                 width: 100%;
+                padding-bottom: 0;
 
                 p {
                     padding-left: 0;
