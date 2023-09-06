@@ -1,4 +1,5 @@
 //Mobile menu
+
 $(document).ready(function () {
   $('.menu__icon').click(function () {
     $('body, html').toggleClass('menu_shown');
@@ -30,7 +31,6 @@ $(document).ready(function () {
   }
 });
 
-
 //Acordion
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-//Swiper Slider
+//Swiper Slider on page Main
 
 const reviewsSwiper = new Swiper(".reviews__swiper", {
   slidesPerView: 3,
@@ -86,7 +85,7 @@ function calculateSlidesPerView() {
 
 
 
-//Swiper Slider next
+//Swiper Slider next on page Main
 
 const worksSwiper = new Swiper(".mySwiper", {
   initialSlide: 1,  // Початковий слайд буде другим (індекс 1)
@@ -127,7 +126,7 @@ function openPage(event, pageName) {
 }
 
 // За замовчуванням відкриємо першу сторінку
-document.getElementById("page6").style.display = "block";
+document.getElementById("page1").style.display = "block";
 document.getElementsByClassName("tab-button")[0].className += " active";
 
 

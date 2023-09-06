@@ -1,3 +1,54 @@
+<style>
+    .other-projects .swiper-slide__info_btn-img {
+        background-image: url('../img/info-page/other-projects/stroke.png');
+    }
+
+    .other-projects .swiper-slide:hover .swiper-slide__info .swiper-slide__info_btn {
+        color: #F5CA61;
+        transition: 0.3s all;
+    }
+
+    .other-projects .swiper-slide:hover .swiper-slide__info .swiper-slide__info_btn-img {
+        background-image: url('../img/info-page/other-projects/stroke-last.png');
+        transition: 0.3s all;
+    }
+
+    /* Стиль стрілки вліво */
+    .other-projects .swiper-button-next::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider.png');
+        margin-left: 3px;
+        transform: rotate(180deg);
+        transition: 0.3s all;
+    }
+
+    /* Стиль стрілки вправо */
+    .other-projects .swiper-button-prev::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider.png');
+        margin-right: 3px;
+        transition: 0.3s all;
+    }
+
+    /* Зміна кольору фону при наведенні на стрілки */
+    .other-projects .swiper-button-next:hover,
+    .other-projects .swiper-button-prev:hover {
+        background-color: #F5CA61;
+        transition: background-color 0.3s ease;
+    }
+
+    .other-projects .swiper-button-prev:hover::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider-last.png');
+        transition: 0.3s all;
+        transform: rotate(180deg);
+    }
+
+    .other-projects .swiper-button-next:hover::after {
+        background-image: url('../img/info-page/other-projects/stroke-slider-last.png');
+        transition: 0.3s all;
+        transform: rotate(0deg);
+    }
+</style>
+
+
 <section class="other-projects">
     <div class="container">
         <div class="row">

@@ -16,7 +16,6 @@
     }
 
     &__img {
-        background-image: url('../img/info/info.png');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -26,7 +25,6 @@
     }
 
     &__last-img {
-        background-image: url('../img/info/info-last.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 508px;
@@ -113,8 +111,16 @@
     }
 
     @media screen and(max-width:768px) {
+        & {
+            padding: 0px;
+        }
+
         &__title {
             font-size: 22px;
+        }
+
+        &__line {
+            margin-top: 12px;
         }
 
         &__img {
@@ -148,12 +154,17 @@
             display: flex;
             justify-content: center;
             margin: 30px auto 0px;
+            height: 400px;
         }
     }
 
     @media screen and(max-width:576px) {
         &__title {
             font-size: 20px;
+        }
+
+        &__line {
+            margin-top: 8px;
         }
 
         &__img {
@@ -187,6 +198,7 @@
         #info__right-block {
             display: flex;
             justify-content: center;
+            height: 270px;
         }
     }
 }

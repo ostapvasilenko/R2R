@@ -70,7 +70,6 @@
                 transition: 0.3s all;
 
                 &-img {
-                    background-image: url('../img/info-page/other-projects/stroke.png');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -79,20 +78,6 @@
                     margin-left: 15px;
                     transition: 0.3s all
                 }
-            }
-        }
-    }
-
-    .swiper-slide:hover {
-        .swiper-slide__info {
-            .swiper-slide__info_btn {
-                color: #F5CA61;
-                transition: 0.3s all;
-            }
-
-            .swiper-slide__info_btn-img {
-                background-image: url('../img/info-page/other-projects/stroke-last.png');
-                transition: 0.3s all
             }
         }
     }
@@ -119,13 +104,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 40px;
+        height: 65px;
 
         &_block {
             display: flex;
             justify-content: space-between;
             width: 150px;
-            margin-top: 50px;
+            margin-top: 40px;
         }
     }
 
@@ -137,40 +122,6 @@
         background-size: cover;
         height: 12px;
         width: 8px;
-    }
-
-    /* Стиль стрілки вліво */
-    .swiper-button-next::after {
-        background-image: url('../img/info-page/other-projects/stroke-slider.png');
-        margin-left: 3px;
-        transform: rotate(180deg);
-        transition: 0.3s all;
-    }
-
-    /* Стиль стрілки вправо */
-    .swiper-button-prev::after {
-        background-image: url('../img/info-page/other-projects/stroke-slider.png');
-        margin-right: 3px;
-        transition: 0.3s all;
-    }
-
-    /* Зміна кольору фону при наведенні на стрілки */
-    .swiper-button-next:hover,
-    .swiper-button-prev:hover {
-        background-color: #F5CA61;
-        transition: background-color 0.3s ease;
-    }
-
-    .swiper-button-prev:hover::after {
-        background-image: url('../img/info-page/other-projects/stroke-slider-last.png');
-        transition: 0.3s all;
-        transform: rotate(180deg);
-    }
-
-    .swiper-button-next:hover::after {
-        background-image: url('../img/info-page/other-projects/stroke-slider-last.png');
-        transition: 0.3s all;
-        transform: rotate(0deg);
     }
 
     @media screen and(max-width:1400px) {
@@ -214,7 +165,7 @@
 
     @media screen and(max-width:768px) {
         & {
-            padding-bottom: 10px;
+            padding-bottom: 0px;
         }
 
         &__title {
